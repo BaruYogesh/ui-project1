@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Shower</title>
+    <link rel="stylesheet" href="styles.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <h2>User Interfaces Project 1: Smart Shower UI</h2>
+    <a href="https://baruyogesh.github.io/projects.html">write-up</a>
+    <div id="project">
+        <script src="index.js"></script>
+        
+        <div id="screen">
+            <div id="home" class="active-home">
+                <div id="clock" class="item">
+                    00:00
+                </div>
+                <div id="settings" class="item">
+                    <div id="powerbutton">OFF</div>
+                </div>
+                <div id="val-display" class="item temp">77</div>
+                <div id="control" class="item">
+                    <button id="temp-up">↑</button>
+                    <br>
+                    <button id="temp-down">↓</button>
+                </div>
+                <div id="val-display" class="item pres">5</div>
+                <div id="control" class="item">
+                    <button id="pres-up">↑</button>
+                    <br>
+                    <button id="pres-down">↓</button>
+                </div>
+                <div id ='mist' class="item nozzle">mist</div>
+                <div id ='drizzle' class="item nozzle selected-nozzle">drizzle</div>
+                <div id ='cone' class="item nozzle">cone</div>
+                <div id='profiles-button' class="item profiles">user1</div>
+            </div>
+            <div id="profiles-view" class="inactive">
+    
+                <div id="user-select">
+                    <div id="user1" class="user">
+                        <div class="name">user1</div>
+                        <div class="chart">view charts</div>
+                        <div class="volume">0mL</div>
+                        <div class="uses">0 uses</div>
+                    </div>
+                    <div id="user2" class="user">
+                        <div class="name">user2</div>
+                        <div class="chart">view charts</div>
+                        <div class="volume">0mL</div>
+                        <div class="uses">0 uses</div>
+                    </div>
+                    <div id="user3" class="user">
+                        <div class="name">user3</div>
+                        <div class="chart">view charts</div>
+                        <div class="volume">0mL</div>
+                        <div class="uses">0 uses</div>
+                    </div>
+                    <div id="user4" class="user">
+                        <div class="name">user4</div>
+                        <div class="chart">view charts</div>
+                        <div class="volume">0mL</div>
+                        <div class="uses">0 uses</div>
+                    </div>
+                </div>
+            </div>
+            <div id="charts" class="inactive">
+                <div id="volume-graph">
+                    <canvas id="volume-graph-canvas" width="400px"></canvas>
+                </div>
+                <div id="uses-graph">
+                    <canvas id="uses-graph-canvas" width="400px"></canvas>
+                </div>
+                <div id="return-button">
+                    return
+                </div>
+            </div>
+        </div>
+    
+        <div id="watch">
+
+            <div id="watch-display">
+                <div id="watch-temp">77</div>
+                <div id="control" class="item">
+                    <button id="watch-temp-up">↑</button>
+                    <br>
+                    <button id="watch-temp-down">↓</button>
+                </div>
+                <div id="watch-pres">5</div>
+                <div id="control" class="item">
+                    <button id="watch-pres-up">↑</button>
+                    <br>
+                    <button id="watch-pres-down">↓</button>
+                </div>
+            </div>
+            <div id="crown">
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
